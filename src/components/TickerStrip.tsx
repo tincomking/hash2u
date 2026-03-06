@@ -17,7 +17,7 @@ function Row() {
     <>
       {ITEMS.map((item, i) => (
         <span key={i} className="inline-flex items-center gap-2 mx-8 whitespace-nowrap text-sm">
-          <span className="text-text-muted">{item.label}</span>
+          <span className="text-text-3">{item.label}</span>
           <span className={`font-mono font-semibold ${item.c}`}>{item.value}</span>
         </span>
       ))}
@@ -27,8 +27,8 @@ function Row() {
 
 export default function TickerStrip() {
   return (
-    <div className="relative w-full overflow-hidden border-y border-border bg-surface/60 py-3.5">
-      <div className="ticker-animate inline-flex">
+    <div className="relative w-full overflow-hidden border-y border-border bg-surface/50 py-3.5">
+      <div className="ticker-scroll inline-flex">
         <Row />
         <Row />
       </div>
